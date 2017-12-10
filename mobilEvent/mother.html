@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+		<title></title>
+		
+		<link rel="stylesheet" href="css/mother.css" />
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+	</head>
+	<body>
+		<header>
+			<div style="font-size: 0;">
+				<video muted id="v" controls loop>
+				    <source src="video/min-video.mp4"></source>
+			    </video>
+			    <div>
+			    	<span></span>
+			    </div>
+			</div>	
+		</header>
+		<section>
+			<div>
+				<h1>母亲节：爱是长情，需要我们认真陪伴</h1>
+				<div>
+					<ul>
+						<li>法网视频</li>
+						<li>
+							<p><span class="iconfont">&#xe602;</span><span>356</span></p>
+							<p><span class="iconfont">&#xe637;</span><span>56</span></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<img src="img/4_03.jpg" alt="" />
+				<span>法网视频</span>
+				<span>关注</span>
+			</div>
+			<div>
+				<h1>相关视频</h1>
+				<ul>
+					<li>
+						<img src="img/1_03.jpg" alt="" />
+						<div>
+							<h1>感恩母亲节</h1>
+							<p>
+								<span class="iconfont">&#xe614;</span><span>半个小时前</span>
+								<span class="iconfont">&#xe602;</span><span>56</span>
+								<span class="iconfont">&#xe637;</span><span>56</span>
+							</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/2_06.jpg" alt="" />
+						<div>
+							<h1>感恩母亲节</h1>
+							<p>
+								<span class="iconfont">&#xe614;</span><span>半个小时前</span>
+								<span class="iconfont">&#xe602;</span><span>56</span>
+								<span class="iconfont">&#xe637;</span><span>56</span>
+							</p>
+						</div>
+					</li>
+					<li>查看更多</li>
+				</ul>
+			</div>
+			<div>
+				<h1>热门评论</h1>
+				<ul>
+					<li>
+						<div><img src="img/3_09.jpg"/></div>
+						<div>
+							<p><span>红花绿叶</span><span>05-09 06:23</span></p>
+							<p>母情节快乐</p>
+						</div>
+						<div><span class="iconfont icon">&#xe63f;</span><span class="icon1">23</span></div>
+						<div><span class="iconfont">&#xe637;</span><span>42</span></div>
+					</li>
+					<li>
+						<div><img src="img/3_09.jpg"/></div>
+						<div>
+							<p><span>红花绿叶</span><span>05-09 06:23</span></p>
+							<p>母情节快乐</p>
+						</div>
+						<div><span class="iconfont icon">&#xe63f;</span><span class="icon1">49</span></div>
+						<div><span class="iconfont">&#xe637;</span><span>25</span></div>
+					</li>
+					<li>
+						<div><img src="img/3_09.jpg"/></div>
+						<div>
+							<p><span>红花绿叶</span><span>05-09 06:23</span></p>
+							<p>母情节快乐</p>
+						</div>
+						<div><span class="iconfont icon">&#xe63f;</span><span class="icon1">59</span></div>
+						<div><span class="iconfont">&#xe637;</span><span>19</span></div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<footer>
+			<ul>
+				<li><span class="iconfont">&#xe646;</span>写评论</li>
+				<li><span class="iconfont">&#xe637;</span></li>
+				<li><span class="iconfont">&#xe696;</span></li>
+				<li><span class="iconfont">&#xe63a;</span></li>
+				<li><span class="iconfont">&#xe658;</span></li>
+			</ul>
+		</footer>
+		
+		
+		
+		
+		<script>
+			document.documentElement.style.fontSize = innerWidth/15 + "px";
+			var icon =document.getElementsByClassName("icon");
+			var icon1 = document.getElementsByClassName("icon1")
+			console.log(icon,icon1)
+			for(let i=0;i<icon.length;i++){
+				icon[i].addEventListener("click",function(){
+					icon1[i].innerHTML = Number(icon1[i].innerHTML)+1;
+					
+				})
+			}
+		</script>
+	</body>
+</html>

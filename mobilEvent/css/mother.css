@@ -1,0 +1,48 @@
+* { margin: 0; padding: 0; }
+
+ul { list-style: none; }
+
+html, html body { width: 100%; height: 100%; }
+html body { display: flex; flex-direction: column; overflow: hidden; }
+html body header video { width: 100%; z-index: -1000; }
+html body section { overflow: auto; background: #f4f4f4; }
+html body section > div, html body body section > div { margin-bottom: 0.4rem; font-size: 0.64rem; background: #fff; }
+html body section > div h1 { font-weight: normal; font-size: 0.72rem; }
+html body section > div > h1 { height: 1.8rem; line-height: 1.8rem; text-indent: 0.4rem; border-bottom: 0.04rem solid #ccc; }
+html body section > div:nth-child(1), html body body section > div:nth-child(1) { height: 2.4rem; padding: 0.4rem; background: #f4f4f4; }
+html body section > div:nth-child(1) h1 { font-size: 0.72rem; border: none; }
+html body section > div:nth-child(1) ul { display: flex; align-items: center; }
+html body section > div:nth-child(1) ul li { line-height: 1.32rem; }
+html body section > div:nth-child(1) ul li:nth-child(1) { flex: 8; color: #ccc; font-size: 0.48rem; }
+html body section > div:nth-child(1) ul li:nth-child(2) { flex: 2; display: flex; }
+html body section > div:nth-child(1) ul li:nth-child(2) p { width: 50%; align-items: center; text-align: right; }
+html body section > div:nth-child(1) ul li:nth-child(2) p span { color: #ccc; font-size: 0.48rem; }
+html body section > div:nth-child(2), html body body section > div:nth-child(2) { height: 2rem; line-height: 2rem; position: relative; padding: 0 0.4rem; }
+html body section > div:nth-child(2) img { width: 1.16rem; margin-top: 0.4rem; }
+html body section > div:nth-child(2) span { display: inline-block; }
+html body section > div:nth-child(2) span:nth-of-type(1) { margin-left: 0.4rem; vertical-align: top; color: #aaa; }
+html body section > div:nth-child(2) span:nth-of-type(2) { position: absolute; right: 0.4rem; top: 0.6rem; width: 1.8rem; height: 0.8rem; line-height: 0.8rem; text-align: center; background: #148ad3; border-radius: 0.1rem; font-size: 0.56rem; color: #fff; }
+html body section > div:nth-child(3) li { padding: 0.4rem; position: relative; }
+html body section > div:nth-child(3) li img { width: 4.52rem; height: 3.8rem; }
+html body section > div:nth-child(3) li div { width: 62%; height: 3.8rem; position: absolute; top: 0.8rem; left: 5.6rem; }
+html body section > div:nth-child(3) li div p { margin-top: 1.2rem; }
+html body section > div:nth-child(3) li div p span { color: #ccc; font-size: 0.48rem; }
+html body section > div:nth-child(3) li div p span:nth-child(3) { margin-left: 3.6rem; }
+html body section > div:nth-child(3) li:nth-child(3) { height: 1.3rem; line-height: 1.3rem; text-align: center; }
+html body section > div:nth-child(4) ul li { display: flex; justify-content: space-between; padding: 0.4rem; }
+html body section > div:nth-child(4) ul li img { width: 1.3rem; height: 1.4rem; margin-top: 0.52rem; margin-left: 0.56rem; }
+html body section > div:nth-child(4) ul li div { flex: 1; }
+html body section > div:nth-child(4) ul li div:nth-child(2) { flex: 3; }
+html body section > div:nth-child(4) ul li div:nth-child(2) p { padding: 0.2rem; }
+html body section > div:nth-child(4) ul li div:nth-child(2) p:nth-child(1) span:nth-child(1) { color: #339ad9; font-size: 0.56rem; }
+html body section > div:nth-child(4) ul li div:nth-child(2) p:nth-child(1) span:nth-child(2) { color: #ccc; font-size: 0.48rem; margin-left: 0.2rem; }
+html body section > div:nth-child(4) ul li div:nth-child(2) p:nth-child(2) span { font-size: 0.64rem; }
+html body section > div:nth-child(4) ul li div:nth-child(3), html body section > div:nth-child(4) ul li div:nth-child(4) { text-align: right; }
+html body section > div:nth-child(4) ul li div:nth-child(3) span, html body section > div:nth-child(4) ul li div:nth-child(4) span { line-height: 1.4rem; }
+html body footer { height: 1.8rem; line-height: 1.8rem; border-top: 0.04rem solid #ccc; box-sizing: border-box; }
+html body footer ul { display: flex; }
+html body footer ul li { flex: 1; text-align: center; }
+html body footer ul li:first-child { flex: 2; font-size: 0.56rem; }
+html body footer ul li span { display: inline-block; height: 1.8rem; line-height: 1.8rem; vertical-align: top; font-size: 0.96rem !important; }
+
+/*# sourceMappingURL=mother.css.map */

@@ -1,0 +1,35 @@
+@font-face { font-family: iconfont; src: url("../images/iconfont/iconfont.woff") format("woff"), url("../images/iconfont/iconfont.ttf") format("truetype"); }
+@font-face { font-family: iconfont; src: url("../images/iconfont/iconfont-menu.woff") format("woff"), url("../images/iconfont/iconfont-menu.ttf") format("truetype"); }
+.iconfont { font-family: iconfont; }
+
+* { margin: 0; padding: 0; }
+
+ul { list-style: none; }
+
+html, html body { width: 100%; height: 100%; }
+html body { display: flex; flex-direction: column; }
+html body header { height: 44px; background: #0dc441; }
+html body header ul { height: 44px; display: flex; align-items: center; }
+html body header ul li:nth-child(1), html body header ul li:nth-child(3) { text-align: center; width: 44px; height: 100%; line-height: 44px; font-size: 22px; color: #fff; opacity: 0.5; }
+html body header ul li:nth-child(2) { flex: 1; display: flex; align-items: center; justify-content: center; }
+html body header ul li:nth-child(2) span { width: 65px; height: 25px; line-height: 25px; text-align: center; font-size: 12px; background: #0ad985; color: #fff; opacity: 0.5; }
+html body header ul li:nth-child(2) span:nth-child(1) { border-radius: 10px 0 0 10px; opacity: 1; }
+html body header ul li:nth-child(2) span:nth-child(2) { border-radius: 0 10px 10px 0; }
+html nav { height: 35px; border-bottom: 1px solid #ccc; box-sizing: border-box; background: #fff; }
+html nav ul { height: 35px; display: flex; }
+html nav ul li { flex: 1; text-align: center; line-height: 35px; font-size: 14px; }
+html nav ul li:nth-child(1) { color: #0dc441; border-bottom: 1px solid #0dc441; }
+html section { height: 100%; overflow: auto; display: flex; justify-content: space-around; flex-wrap: wrap; }
+html section div { width: 48%; padding: 5px 0; }
+html section div img { width: 100%; height: 198.72px; }
+html section div b { font-style: normal; font-size: 16px; }
+html footer { height: 44px; background: #fff; flex-shrink: 0; }
+html footer ul { height: 44px; display: flex; align-items: center; }
+html footer ul li { flex: 1; }
+html footer ul li span { text-align: center; display: block; font-size: 12px; color: #ccc; }
+html footer ul li span:nth-child(1) { font-size: 24px; }
+html footer ul li:nth-child(1) span { color: #0dc441; }
+html footer ul li:nth-child(3) { position: relative; }
+html footer ul li:nth-child(3) span { width: 50px; height: 50px; line-height: 50px; border: 1px solid #ccc; border-radius: 50%; font-size: 34px; background: #fff; position: absolute; bottom: -22px; left: 50%; margin-left: -25px; }
+
+/*# sourceMappingURL=foot.css.map */

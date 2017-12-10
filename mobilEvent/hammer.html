@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/hammer.css" />
+		<title></title>
+	</head>
+	<body>
+		<div class="box">
+			<div class="container">
+				<div>001</div>
+				<div>002</div>
+				<div>003</div>
+				<div>004</div>
+			</div>
+		</div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+		<script>
+			var box = document.querySelector(".box");
+			var container = document.querySelector(".container");
+			var divs = container.getElementsByTagName("div");
+			var hs = new Hammer(box);
+            
+            var index = 0;
+            hs.on("swipeleft",function(){
+            	index++;
+            	if(index == divs.length){
+            		index = divs.length -1;
+            	}
+            	container.style.webkitTransform = "translate3d(-"+index*25+"%,0,0)";
+            })
+            hs.on("swiperight",function(){
+            	index--;
+            	if(index <0){
+            		index = 0;
+            	}
+            	container.style.webkitTransform = "translate3d(-"+index*25+"%,0,0)";
+            })
+		</script>
+	</body>
+</html>

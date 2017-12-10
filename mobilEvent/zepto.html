@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+		<title></title>
+		<script src="js/zepto.js"></script>
+		<script src="js/zeptoEvent.js"></script>
+		<script src="js/zeptoTouch.js"></script>
+		
+		<link rel="stylesheet" href="css/hammer.css" />
+	</head>
+	<body>
+		<div class="box">
+			<div class="container">
+				<div>001</div>
+				<div>002</div>
+				<div>003</div>
+				<div>004</div>
+			</div>
+		</div>
+	</body>
+	
+	
+	<script>
+		$(function(){
+			var index = 0;
+			$(".container").on("swipeLeft",function(){
+				index++;
+            	if(index == $(".container div").length){
+            		index = $(".container div").length -1;
+            	}
+            	$(".container").css({
+            		transform:"translate3d(-"+index*25+"%,0,0)",
+            	})
+            	
+			})
+			$(".container").on("swipeRight",function(){
+				index--;
+            	if(index < 0){
+            		index = 0;
+            	}
+            	$(".container").css({
+            		transform:"translate3d(-"+index*25+"%,0,0)",
+            	})
+            	
+			})
+		})
+	</script>
+</html>

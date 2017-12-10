@@ -1,0 +1,35 @@
+* { margin: 0; padding: 0; }
+
+html body header, html body footer { position: fixed; width: 100%; }
+
+ul { list-style: none; }
+
+a { text-decoration: none; }
+
+html, html body, html body section { width: 100%; height: 100%; }
+html body, html body section body { padding-top: 3.68rem; padding-bottom: 2rem; box-sizing: border-box; }
+html body header { top: 0; }
+html body header div:nth-of-type(1) { padding: 0.4rem 0; background: #148ad3; }
+html body header div:nth-of-type(1) span { color: #fff; }
+html body header div:nth-of-type(1) span:first-child { margin-left: 5.6rem; }
+html body header div:nth-of-type(1) .icon { margin-left: 4rem; font-size: 0.88rem; }
+html body header div:nth-of-type(2) { border-bottom: 0.02rem solid #ccc; background: #fff; position: relative; }
+html body header div:nth-of-type(2) a { display: inline-block; font-size: 0.6rem; text-decoration: none; height: 1.6rem; line-height: 1.6rem; color: #000; margin-left: 0.46rem; }
+html body header div:nth-of-type(2) span { display: inline-block; position: absolute; top: 0; border-left: 0.02rem solid #ccc; border-radius: 0.1rem; box-sizing: border-box; width: 2rem; height: 1.6rem; line-height: 1.6rem; background: #fff; right: 0; text-align: center; font-size: 0.88rem; color: #148ad3; }
+html body section { background: #f4f4f4; overflow: auto; }
+html body section > div, html body body section > div { border-bottom: 0.02rem solid #ccc; padding: 0 0.2rem; margin: 0.2rem 0; }
+html body section div h1 { font-size: 0.72Rem; font-weight: normal; }
+html body section div:nth-child(1) img, html body section div:nth-child(2) img, html body section div:nth-child(3) img { width: 4.52rem; margin-top: 0.4rem; }
+html body section div:nth-child(1) div a, html body section div:nth-child(2) div a, html body section div:nth-child(3) div a { display: inline-block; font-size: 0.56rem; color: #aaa; margin-bottom: 0.6rem; }
+html body section div:nth-child(1) div a:nth-child(2), html body section div:nth-child(2) div a:nth-child(2), html body section div:nth-child(3) div a:nth-child(2) { margin-left: 7.8rem; }
+html body section > div:nth-child(2), html body body section > div:nth-child(2) { position: relative; }
+html body section > div:nth-child(2) div:last-child, html body section body section > div:nth-child(2) div:last-child { position: absolute; width: 61.66%; height: 100%; top: 0.6rem; right: 0; }
+html body section > div:nth-child(2) div:last-child a:nth-child(2), html body section body section > div:nth-child(2) div:last-child a:nth-child(2) { margin-left: 2.2rem; }
+html body section div:nth-child(3) img { width: 100%; margin-top: 0.4rem; }
+html body footer { height: 2rem; bottom: 0; background: #fff; }
+html body footer ul { overflow: hidden; }
+html body footer ul li { float: left; width: 25%; text-align: center; }
+html body footer ul li span { display: block; font-size: 0.64rem; }
+html body footer ul li .icon { font-size: 0.88rem; }
+
+/*# sourceMappingURL=mht.css.map */

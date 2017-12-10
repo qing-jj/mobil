@@ -1,0 +1,197 @@
+*{margin: 0;padding: 0;}
+$sc:25;
+%headfoot{
+    position: fixed;
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+@mixin font($fz:16,$color:#000){
+    font-size: $fz/$sc+rem;
+    color: $color;
+}
+@mixin hg($height:50,$heightL:20){
+    height: $height/$sc+rem;
+    line-height: $heightL/$sc+rem;
+}
+html{
+    width: 100%;
+    height: 100%;
+    body{
+        @extend html;
+        padding-top: 84/$sc+rem;
+        box-sizing: border-box;
+        background: #fff;
+        header{
+            @extend %headfoot;
+            top: 0;
+            div:nth-of-type(1){
+                background: url(../img/header.png) no-repeat center;
+                background-size: 100% 100%;
+                @include hg(44);
+            }
+            div:nth-of-type(2){
+                border-bottom: 1/$sc+rem solid #ccc;
+                @include hg(44);
+                overflow: hidden;
+                position: relative;
+                .container{
+                    position: absolute;
+                    background: #fff;
+                    left: 0;
+                }
+                a{
+                    display: inline-block;
+                    @include font();
+                    text-decoration: none;
+                    @include hg(40,40);
+                    margin-left: 10/$sc+rem;
+                }
+                span{
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    border-left: 1/$sc+rem solid #ccc;
+                    border-radius: 5/$sc+rem;
+                    box-sizing: border-box;
+                    width: 50/$sc+rem;
+                    @include hg(40,40);
+                    background: #fff;
+                    left: 325/$sc+rem;
+                    text-align: center;
+                    @include font(22,#148ad3)
+                }
+            }
+        }
+        
+        section{
+            height: 100%;
+            overflow: auto;
+            >p{
+                @include hg(10);
+                border-top: 0.5/$sc+rem solid #ccc;
+                border-bottom: 0.5/$sc+rem solid #ccc;
+                margin-bottom: 0;
+                background: #F4F4F4;
+            }
+            >h2{
+               @include font(14);
+               padding-left: 10/$sc+rem;
+               border-left: 2/$sc+rem solid #000;
+               background: #fff;
+               margin: 0;
+               margin-top: 10/$sc+rem;
+               margin-left: 10/$sc+rem;
+            }
+            >a{
+                display: block;
+                background: #fff;
+                position: relative;
+                img{
+                    width: 100/$sc+rem;
+                    height: 78/$sc+rem;
+                    position: absolute;
+                    top: 10/$sc+rem;
+                    right: 10/$sc+rem;
+                }
+                &:nth-of-type(1),
+                &:nth-of-type(3),
+                &:nth-of-type(4),
+                &:nth-of-type(5),
+                &:nth-of-type(6),
+                &:nth-of-type(7){
+                    >div{
+                        padding: 10/$sc+rem;
+                        &:nth-of-type(1){
+                            @include hg(135);
+                            div{
+                                &:nth-of-type(1){
+                                    width: 220/$sc+rem;
+                                    @include hg(78);
+                                    @include font();
+                                }
+                                &:nth-of-type(2){
+                                    span{
+                                        @include font(12,#ccc);    
+                                    }
+                                    .toTop{
+                                        background: deeppink;
+                                        color: #fff;
+                                        padding: 2/$sc+rem;
+                                        margin-right: 8/$sc+rem;
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                
+                &:nth-of-type(2){
+                    >div{
+                        padding: 10/$sc+rem;
+                        display: flex;
+                        justify-content: space-between;
+                        span{
+                           @include font(12); 
+                        }
+                        &:nth-child(1){
+                            @include hg(24);
+                            div:nth-child(1){
+                                span:nth-child(1){
+                                    @include font(18,#000);
+                                }
+                                span:last-child{
+                                    padding: 0 5/$sc+rem;
+                                    color: #fff;
+                                    background: #F0D104;
+                                }
+                            }
+                        }
+                        &:nth-child(2){
+                            margin-top: 0.1/$sc+rem;
+                            div:last-child{
+                                padding: 0 5/$sc+rem;
+                                border-radius: 25/$sc+rem;
+                                @include font(12);
+                                @include hg(14,14);
+                                color: #fff;
+                                background: #ccc;
+                                margin-top: 5/$sc+rem;
+                            }
+                        }
+                    }
+                }
+                
+                &:nth-of-type(3),
+                &:nth-of-type(4),
+                &:nth-of-type(5),
+                &:nth-of-type(6),
+                &:nth-of-type(7){
+                    p{
+                        padding-bottom: 5/$sc+rem;
+                        margin-bottom: 0;
+                        span{
+                            @include font(12,blue);
+                            &:nth-child(1){
+                                @include font(16,blue);
+                                margin-right: 8/$sc+rem;
+                            }
+                        } 
+                    }
+                    img{
+                        top: 36/$sc+rem;;
+                    }
+                }
+            }
+        }
+    }
+}
+
+a.active{
+    color: blue!important;
+}

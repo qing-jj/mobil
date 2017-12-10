@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;}
+			html,body{
+				height: 100%;
+				width: 100%;
+			}
+			.box{
+				width: 200px;
+				height: 200px;
+				background: gold;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+		<script>
+			var box = document.querySelector(".box")
+			var hs = new Hammer(box);
+			hs.get("pinch").set({enable:true});
+			var sc = 1;
+			
+			hs.on("pinchout",function(){
+				if(sc<3){
+					sc +=0.01;
+				}
+				
+				box.style.webkitTransform = "scale("+sc+")";
+			})
+			hs.on("pinchin",function(){
+				if(sc>0.1){
+					sc -=0.01;
+				}
+				box.style.webkitTransform = "scale("+sc+")";
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+* { margin: 0; padding: 0; }
+
+html body header { position: fixed; width: 100%; }
+
+ul { list-style: none; }
+
+a { text-decoration: none; }
+
+html, html body { width: 100%; height: 100%; }
+html body { padding-top: 3.36rem; box-sizing: border-box; background: #fff; }
+html body header { top: 0; }
+html body header div:nth-of-type(1) { background: url(../img/header.png) no-repeat center; background-size: 100% 100%; height: 1.76rem; line-height: 0.8rem; }
+html body header div:nth-of-type(2) { border-bottom: 0.04rem solid #ccc; height: 1.76rem; line-height: 0.8rem; overflow: hidden; position: relative; }
+html body header div:nth-of-type(2) .container { position: absolute; background: #fff; left: 0; }
+html body header div:nth-of-type(2) a { display: inline-block; font-size: 0.64rem; color: #000; text-decoration: none; height: 1.6rem; line-height: 1.6rem; margin-left: 0.4rem; }
+html body header div:nth-of-type(2) span { display: inline-block; position: absolute; top: 0; border-left: 0.04rem solid #ccc; border-radius: 0.2rem; box-sizing: border-box; width: 2rem; height: 1.6rem; line-height: 1.6rem; background: #fff; left: 13rem; text-align: center; font-size: 0.88rem; color: #148ad3; }
+html body section { height: 100%; overflow: auto; }
+html body section > p, html body body section > p { height: 0.4rem; line-height: 0.8rem; border-top: 0.02rem solid #ccc; border-bottom: 0.02rem solid #ccc; margin-bottom: 0; background: #F4F4F4; }
+html body section > h2, html body body section > h2 { font-size: 0.56rem; color: #000; padding-left: 0.4rem; border-left: 0.08rem solid #000; background: #fff; margin: 0; margin-top: 0.4rem; margin-left: 0.4rem; }
+html body section > a, html body body section > a { display: block; background: #fff; position: relative; }
+html body section > a img { width: 4rem; height: 3.12rem; position: absolute; top: 0.4rem; right: 0.4rem; }
+html body section > a:nth-of-type(1) > div, html body section > a:nth-of-type(3) > div, html body section > a:nth-of-type(4) > div, html body section > a:nth-of-type(5) > div, html body section > a:nth-of-type(6) > div, html body section > a:nth-of-type(7) > div { padding: 0.4rem; }
+html body section > a:nth-of-type(1) > div:nth-of-type(1), html body section > a:nth-of-type(3) > div:nth-of-type(1), html body section > a:nth-of-type(4) > div:nth-of-type(1), html body section > a:nth-of-type(5) > div:nth-of-type(1), html body section > a:nth-of-type(6) > div:nth-of-type(1), html body section > a:nth-of-type(7) > div:nth-of-type(1) { height: 5.4rem; line-height: 0.8rem; }
+html body section > a:nth-of-type(1) > div:nth-of-type(1) div:nth-of-type(1), html body section > a:nth-of-type(3) > div:nth-of-type(1) div:nth-of-type(1), html body section > a:nth-of-type(4) > div:nth-of-type(1) div:nth-of-type(1), html body section > a:nth-of-type(5) > div:nth-of-type(1) div:nth-of-type(1), html body section > a:nth-of-type(6) > div:nth-of-type(1) div:nth-of-type(1), html body section > a:nth-of-type(7) > div:nth-of-type(1) div:nth-of-type(1) { width: 8.8rem; height: 3.12rem; line-height: 0.8rem; font-size: 0.64rem; color: #000; }
+html body section > a:nth-of-type(1) > div:nth-of-type(1) div:nth-of-type(2) span, html body section > a:nth-of-type(3) > div:nth-of-type(1) div:nth-of-type(2) span, html body section > a:nth-of-type(4) > div:nth-of-type(1) div:nth-of-type(2) span, html body section > a:nth-of-type(5) > div:nth-of-type(1) div:nth-of-type(2) span, html body section > a:nth-of-type(6) > div:nth-of-type(1) div:nth-of-type(2) span, html body section > a:nth-of-type(7) > div:nth-of-type(1) div:nth-of-type(2) span { font-size: 0.48rem; color: #ccc; }
+html body section > a:nth-of-type(1) > div:nth-of-type(1) div:nth-of-type(2) .toTop, html body section > a:nth-of-type(3) > div:nth-of-type(1) div:nth-of-type(2) .toTop, html body section > a:nth-of-type(4) > div:nth-of-type(1) div:nth-of-type(2) .toTop, html body section > a:nth-of-type(5) > div:nth-of-type(1) div:nth-of-type(2) .toTop, html body section > a:nth-of-type(6) > div:nth-of-type(1) div:nth-of-type(2) .toTop, html body section > a:nth-of-type(7) > div:nth-of-type(1) div:nth-of-type(2) .toTop { background: deeppink; color: #fff; padding: 0.08rem; margin-right: 0.32rem; }
+html body section > a:nth-of-type(2) > div { padding: 0.4rem; display: flex; justify-content: space-between; }
+html body section > a:nth-of-type(2) > div span { font-size: 0.48rem; color: #000; }
+html body section > a:nth-of-type(2) > div:nth-child(1) { height: 0.96rem; line-height: 0.8rem; }
+html body section > a:nth-of-type(2) > div:nth-child(1) div:nth-child(1) span:nth-child(1) { font-size: 0.72rem; color: #000; }
+html body section > a:nth-of-type(2) > div:nth-child(1) div:nth-child(1) span:last-child { padding: 0 0.2rem; color: #fff; background: #F0D104; }
+html body section > a:nth-of-type(2) > div:nth-child(2) { margin-top: 0.004rem; }
+html body section > a:nth-of-type(2) > div:nth-child(2) div:last-child { padding: 0 0.2rem; border-radius: 1rem; font-size: 0.48rem; color: #000; height: 0.56rem; line-height: 0.56rem; color: #fff; background: #ccc; margin-top: 0.2rem; }
+html body section > a:nth-of-type(3) p, html body section > a:nth-of-type(4) p, html body section > a:nth-of-type(5) p, html body section > a:nth-of-type(6) p, html body section > a:nth-of-type(7) p { padding-bottom: 0.2rem; margin-bottom: 0; }
+html body section > a:nth-of-type(3) p span, html body section > a:nth-of-type(4) p span, html body section > a:nth-of-type(5) p span, html body section > a:nth-of-type(6) p span, html body section > a:nth-of-type(7) p span { font-size: 0.48rem; color: blue; }
+html body section > a:nth-of-type(3) p span:nth-child(1), html body section > a:nth-of-type(4) p span:nth-child(1), html body section > a:nth-of-type(5) p span:nth-child(1), html body section > a:nth-of-type(6) p span:nth-child(1), html body section > a:nth-of-type(7) p span:nth-child(1) { font-size: 0.64rem; color: blue; margin-right: 0.32rem; }
+html body section > a:nth-of-type(3) img, html body section > a:nth-of-type(4) img, html body section > a:nth-of-type(5) img, html body section > a:nth-of-type(6) img, html body section > a:nth-of-type(7) img { top: 1.44rem; }
+
+a.active { color: blue !important; }
+
+/*# sourceMappingURL=index.css.map */

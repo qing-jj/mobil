@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+		<title></title>
+		<style>
+			.box{
+				width: 300px;
+				height: 300px;
+				background: #ccc;
+				position: absolute;
+				top: 0;
+				opacity: 0.4;
+			}
+			a{
+				display: block;
+				width: 50px;
+				height: 50px;
+				-webkit-tap-highlight-color: transparent;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" />
+		<div class="box"></div>
+		<a href="https://www.baidu.com/">百度</a>
+		
+		<script>
+			var box = document.querySelector(".box");
+			box.addEventListener("touchstart",function(e){
+				this.innerHTML = e.touches.length;
+				e.preventDefault(); //由于移动端事件延迟300ms 点击box消失的时候会透过a标签  所以要阻止默认行为  移动端很多都需要阻止默认行为
+				this.style.display = "none";
+			})
+			box.addEventListener("touchmove",function(e){
+				console.log(e.targetTouches.length);
+			})
+			box.addEventListener("touchend",function(e){
+				console.log(e.changedTouches.length);
+			})
+			
+//			touches是当前屏幕上所有触摸点的列表;
+//          targetTouches是当前对象上所有触摸点的列表;
+//          changedTouches是涉及当前事件的触摸点的列表
+//          但实际输出这三个对象却都是一样的
+		</script>
+	</body>
+</html>

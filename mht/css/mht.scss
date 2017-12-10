@@ -1,0 +1,147 @@
+*{margin: 0;padding: 0;}
+$sc:50;
+$textsc:25;
+%headfoot{
+    position: fixed;
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    width: 100%;
+    height: 100%;
+    body{
+        @extend html;
+        padding-top: 92/$textsc+rem;
+        padding-bottom: 100/$sc+rem;
+        box-sizing: border-box;
+        header{
+            @extend %headfoot;
+            top: 0;
+            div:nth-of-type(1){
+                padding: 20/$sc+rem 0;
+                background: #148ad3;
+                span{
+                    color: #fff;
+                }
+                span:first-child{
+                    margin-left: 140/$textsc+rem;
+                }
+                .icon{
+                    margin-left: 100/$textsc+rem;
+                    font-size: 22/$textsc+rem;
+                }
+            }
+            div:nth-of-type(2){
+                border-bottom: 1/$sc+rem solid #ccc;
+                background: #fff;
+                position: relative;
+                a{
+                    display: inline-block;
+                    font-size: 30/$sc+rem;
+                    text-decoration: none;
+                    height: 80/$sc+rem;
+                    line-height: 80/$sc+rem;
+                    color: #000;
+                    margin-left: 23/$sc+rem;
+                }
+                span{
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    border-left: 1/$sc+rem solid #ccc;
+                    border-radius: 5/$sc+rem;
+                    box-sizing: border-box;
+                    width: 100/$sc+rem;
+                    height: 80/$sc+rem;
+                    line-height: 80/$sc+rem;
+                    background: #fff;
+                    right: 0;
+                    text-align: center;
+                    font-size: 22/$textsc+rem;
+                    color: #148ad3;
+                }
+            }
+        }
+        section{
+            @extend html;
+            background: #f4f4f4;
+            overflow: auto;
+            
+            >div{
+               border-bottom: 1/$sc+rem solid #ccc; 
+               padding: 0 5/$textsc+rem;
+               margin: 5/$textsc+rem 0;
+            }
+            div{ 
+                h1{
+                    font-size: 18/$textsc+Rem;
+                    font-weight: normal;
+                }
+            }
+            div:nth-child(1),
+            div:nth-child(2),
+            div:nth-child(3){
+                img{
+                    width: 226/$sc+rem;
+                    margin-top: 10/$textsc+rem;
+                }
+                div{
+                    a{
+                        display: inline-block;
+                        font-size: 14/$textsc+rem;
+                        color: #aaa;
+                        margin-bottom: 15/$textsc+rem;
+                    }
+                    a:nth-child(2){
+                        margin-left: 390/$sc+rem;
+                    }
+                }
+            }
+            >div:nth-child(2){
+                position: relative;
+                div:last-child{
+                    position: absolute;
+                    width: 61.66%;
+                    height: 100%;
+                    top: 15/$textsc+rem;
+                    right: 0;
+                    a:nth-child(2){
+                        margin-left: 110/$sc+rem;
+                    }
+                }    
+            }
+            div:nth-child(3){
+                img{
+                    width: 100%;
+                    margin-top: 10/$textsc+rem;
+                }
+            }
+        }
+        footer{
+            @extend %headfoot;
+            height: 100/$sc+rem;
+            bottom: 0;
+            background: #fff;
+            ul{
+                overflow: hidden;
+                li{
+                    float: left;
+                    width: 25%;
+                    text-align: center;
+                    span{
+                        display: block;
+                        font-size: 16/$textsc+rem;
+                    }
+                    .icon{
+                        font-size: 22/$textsc+rem;
+                    }
+                }
+            }
+        }
+    }
+}
